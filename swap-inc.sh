@@ -11,7 +11,7 @@ echo "-----------------------------"
 echo "SWAP MEMORY IS BEING ADDED !!"
 echo "-----------------------------"
 echo ""
-read -p "Enter SWAP SIZE to add:(e.g. for 2GB -> type 2G and Enter" size
+read -p "Enter SWAP SIZE to add (eg: for 2GB type -> 2G and press Enter) :" size
 sudo fallocate -l $size /swapfile
 sudo chmod 600 /swapfile
 sudo mkswap /swapfile
